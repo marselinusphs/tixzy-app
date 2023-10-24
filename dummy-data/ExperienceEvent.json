@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "title": "D'Youth Festival 3.0",
+    "location": "Denpasar",
+    "price": 60000,
+    "date": "2023-10-22",
+    "image": "https://tixzy.id/uploads/0000/1/2023/10/01/banner-detail-600.png",
+    "organizer": "D'YOUTHFEST",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/10/01/profile-150.png"
+  },
+  {
+    "id": "2",
+    "title": "SKEJAB ROAD TO DEWATA PROJECT",
+    "location": "Denpasar",
+    "price": 75000,
+    "date": "2023-10-29",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/25/whatsapp-image-2023-09-21-at-45835-pm-600.jpeg",
+    "organizer": "SKEJAB EVENT",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/25/desain-tanpa-judul-36-150.png"
+  },
+  {
+    "id": "3",
+    "title": "FANATIK #XI 2023",
+    "location": "Gianyar",
+    "price": 175000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/27/ticket-detail-600.jpg",
+    "organizer": "Fanatik",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/27/62258962-2383487805254780-2241931679646089216-n.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Satu Dasawarsa Kutus-Kutus",
+    "location": "Gianyar",
+    "price": 100000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/19/kutus-kutus-tixzy-final-760x540px-600.jpg",
+    "organizer": "Kutus-Kutus Official",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/15/kutus-kutus-tixzy-250x250-150.jpg"
+  },
+  {
+    "id": "5",
+    "title": "SID 28TH Anniversary - Jantan Jahanam",
+    "location": "Bali",
+    "price": 280000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/08/04/sid-jantan-jahanam28-banner-tixzy02-web-600.jpg",
+    "organizer": "Superman is Dead",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/08/04/kamikaze-logo022023v03color02-150.png"
+  },{
+    "id": "6",
+    "title": "D'Youth Festival 3.0",
+    "location": "Denpasar",
+    "price": 60000,
+    "date": "2023-10-22",
+    "image": "https://tixzy.id/uploads/0000/1/2023/10/01/banner-detail-600.png",
+    "organizer": "D'YOUTHFEST",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/10/01/profile-150.png"
+  },
+  {
+    "id": "7",
+    "title": "SKEJAB ROAD TO DEWATA PROJECT",
+    "location": "Denpasar",
+    "price": 75000,
+    "date": "2023-10-29",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/25/whatsapp-image-2023-09-21-at-45835-pm-600.jpeg",
+    "organizer": "SKEJAB EVENT",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/25/desain-tanpa-judul-36-150.png"
+  },
+  {
+    "id": "8",
+    "title": "FANATIK #XI 2023",
+    "location": "Gianyar",
+    "price": 175000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/27/ticket-detail-600.jpg",
+    "organizer": "Fanatik",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/27/62258962-2383487805254780-2241931679646089216-n.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Satu Dasawarsa Kutus-Kutus",
+    "location": "Gianyar",
+    "price": 100000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/09/19/kutus-kutus-tixzy-final-760x540px-600.jpg",
+    "organizer": "Kutus-Kutus Official",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/09/15/kutus-kutus-tixzy-250x250-150.jpg"
+  },
+  {
+    "id": "10",
+    "title": "SID 28TH Anniversary - Jantan Jahanam",
+    "location": "Bali",
+    "price": 280000,
+    "date": "2023-11-05",
+    "image": "https://tixzy.id/uploads/0000/1/2023/08/04/sid-jantan-jahanam28-banner-tixzy02-web-600.jpg",
+    "organizer": "Superman is Dead",
+    "photo_organizer": "https://tixzy.id/uploads/0000/1/2023/08/04/kamikaze-logo022023v03color02-150.png"
+  }
+]

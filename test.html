@@ -1,0 +1,2262 @@
+<html lang="en">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+<head>
+  <script type="module">
+    import RefreshRuntime from "/@react-refresh"
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => { }
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>
+
+  <script type="module" src="/@vite/client"></script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="src/assets/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Tixzy | Ticketing More Easy</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/src/App.css">
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  <style type="text/css"
+    data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/node_modules/.pnpm/aos@2.3.4/node_modules/aos/dist/aos.css">
+    [data-aos][data-aos][data-aos-duration="50"],
+    body[data-aos-duration="50"] [data-aos] {
+      transition-duration: 50ms
+    }
+
+    [data-aos][data-aos][data-aos-delay="50"],
+    body[data-aos-delay="50"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="50"].aos-animate,
+    body[data-aos-delay="50"] [data-aos].aos-animate {
+      transition-delay: 50ms
+    }
+
+    [data-aos][data-aos][data-aos-duration="100"],
+    body[data-aos-duration="100"] [data-aos] {
+      transition-duration: .1s
+    }
+
+    [data-aos][data-aos][data-aos-delay="100"],
+    body[data-aos-delay="100"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="100"].aos-animate,
+    body[data-aos-delay="100"] [data-aos].aos-animate {
+      transition-delay: .1s
+    }
+
+    [data-aos][data-aos][data-aos-duration="150"],
+    body[data-aos-duration="150"] [data-aos] {
+      transition-duration: .15s
+    }
+
+    [data-aos][data-aos][data-aos-delay="150"],
+    body[data-aos-delay="150"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="150"].aos-animate,
+    body[data-aos-delay="150"] [data-aos].aos-animate {
+      transition-delay: .15s
+    }
+
+    [data-aos][data-aos][data-aos-duration="200"],
+    body[data-aos-duration="200"] [data-aos] {
+      transition-duration: .2s
+    }
+
+    [data-aos][data-aos][data-aos-delay="200"],
+    body[data-aos-delay="200"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="200"].aos-animate,
+    body[data-aos-delay="200"] [data-aos].aos-animate {
+      transition-delay: .2s
+    }
+
+    [data-aos][data-aos][data-aos-duration="250"],
+    body[data-aos-duration="250"] [data-aos] {
+      transition-duration: .25s
+    }
+
+    [data-aos][data-aos][data-aos-delay="250"],
+    body[data-aos-delay="250"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="250"].aos-animate,
+    body[data-aos-delay="250"] [data-aos].aos-animate {
+      transition-delay: .25s
+    }
+
+    [data-aos][data-aos][data-aos-duration="300"],
+    body[data-aos-duration="300"] [data-aos] {
+      transition-duration: .3s
+    }
+
+    [data-aos][data-aos][data-aos-delay="300"],
+    body[data-aos-delay="300"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="300"].aos-animate,
+    body[data-aos-delay="300"] [data-aos].aos-animate {
+      transition-delay: .3s
+    }
+
+    [data-aos][data-aos][data-aos-duration="350"],
+    body[data-aos-duration="350"] [data-aos] {
+      transition-duration: .35s
+    }
+
+    [data-aos][data-aos][data-aos-delay="350"],
+    body[data-aos-delay="350"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="350"].aos-animate,
+    body[data-aos-delay="350"] [data-aos].aos-animate {
+      transition-delay: .35s
+    }
+
+    [data-aos][data-aos][data-aos-duration="400"],
+    body[data-aos-duration="400"] [data-aos] {
+      transition-duration: .4s
+    }
+
+    [data-aos][data-aos][data-aos-delay="400"],
+    body[data-aos-delay="400"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="400"].aos-animate,
+    body[data-aos-delay="400"] [data-aos].aos-animate {
+      transition-delay: .4s
+    }
+
+    [data-aos][data-aos][data-aos-duration="450"],
+    body[data-aos-duration="450"] [data-aos] {
+      transition-duration: .45s
+    }
+
+    [data-aos][data-aos][data-aos-delay="450"],
+    body[data-aos-delay="450"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="450"].aos-animate,
+    body[data-aos-delay="450"] [data-aos].aos-animate {
+      transition-delay: .45s
+    }
+
+    [data-aos][data-aos][data-aos-duration="500"],
+    body[data-aos-duration="500"] [data-aos] {
+      transition-duration: .5s
+    }
+
+    [data-aos][data-aos][data-aos-delay="500"],
+    body[data-aos-delay="500"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="500"].aos-animate,
+    body[data-aos-delay="500"] [data-aos].aos-animate {
+      transition-delay: .5s
+    }
+
+    [data-aos][data-aos][data-aos-duration="550"],
+    body[data-aos-duration="550"] [data-aos] {
+      transition-duration: .55s
+    }
+
+    [data-aos][data-aos][data-aos-delay="550"],
+    body[data-aos-delay="550"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="550"].aos-animate,
+    body[data-aos-delay="550"] [data-aos].aos-animate {
+      transition-delay: .55s
+    }
+
+    [data-aos][data-aos][data-aos-duration="600"],
+    body[data-aos-duration="600"] [data-aos] {
+      transition-duration: .6s
+    }
+
+    [data-aos][data-aos][data-aos-delay="600"],
+    body[data-aos-delay="600"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="600"].aos-animate,
+    body[data-aos-delay="600"] [data-aos].aos-animate {
+      transition-delay: .6s
+    }
+
+    [data-aos][data-aos][data-aos-duration="650"],
+    body[data-aos-duration="650"] [data-aos] {
+      transition-duration: .65s
+    }
+
+    [data-aos][data-aos][data-aos-delay="650"],
+    body[data-aos-delay="650"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="650"].aos-animate,
+    body[data-aos-delay="650"] [data-aos].aos-animate {
+      transition-delay: .65s
+    }
+
+    [data-aos][data-aos][data-aos-duration="700"],
+    body[data-aos-duration="700"] [data-aos] {
+      transition-duration: .7s
+    }
+
+    [data-aos][data-aos][data-aos-delay="700"],
+    body[data-aos-delay="700"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="700"].aos-animate,
+    body[data-aos-delay="700"] [data-aos].aos-animate {
+      transition-delay: .7s
+    }
+
+    [data-aos][data-aos][data-aos-duration="750"],
+    body[data-aos-duration="750"] [data-aos] {
+      transition-duration: .75s
+    }
+
+    [data-aos][data-aos][data-aos-delay="750"],
+    body[data-aos-delay="750"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="750"].aos-animate,
+    body[data-aos-delay="750"] [data-aos].aos-animate {
+      transition-delay: .75s
+    }
+
+    [data-aos][data-aos][data-aos-duration="800"],
+    body[data-aos-duration="800"] [data-aos] {
+      transition-duration: .8s
+    }
+
+    [data-aos][data-aos][data-aos-delay="800"],
+    body[data-aos-delay="800"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="800"].aos-animate,
+    body[data-aos-delay="800"] [data-aos].aos-animate {
+      transition-delay: .8s
+    }
+
+    [data-aos][data-aos][data-aos-duration="850"],
+    body[data-aos-duration="850"] [data-aos] {
+      transition-duration: .85s
+    }
+
+    [data-aos][data-aos][data-aos-delay="850"],
+    body[data-aos-delay="850"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="850"].aos-animate,
+    body[data-aos-delay="850"] [data-aos].aos-animate {
+      transition-delay: .85s
+    }
+
+    [data-aos][data-aos][data-aos-duration="900"],
+    body[data-aos-duration="900"] [data-aos] {
+      transition-duration: .9s
+    }
+
+    [data-aos][data-aos][data-aos-delay="900"],
+    body[data-aos-delay="900"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="900"].aos-animate,
+    body[data-aos-delay="900"] [data-aos].aos-animate {
+      transition-delay: .9s
+    }
+
+    [data-aos][data-aos][data-aos-duration="950"],
+    body[data-aos-duration="950"] [data-aos] {
+      transition-duration: .95s
+    }
+
+    [data-aos][data-aos][data-aos-delay="950"],
+    body[data-aos-delay="950"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="950"].aos-animate,
+    body[data-aos-delay="950"] [data-aos].aos-animate {
+      transition-delay: .95s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1000"],
+    body[data-aos-duration="1000"] [data-aos] {
+      transition-duration: 1s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1000"],
+    body[data-aos-delay="1000"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1000"].aos-animate,
+    body[data-aos-delay="1000"] [data-aos].aos-animate {
+      transition-delay: 1s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1050"],
+    body[data-aos-duration="1050"] [data-aos] {
+      transition-duration: 1.05s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1050"],
+    body[data-aos-delay="1050"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1050"].aos-animate,
+    body[data-aos-delay="1050"] [data-aos].aos-animate {
+      transition-delay: 1.05s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1100"],
+    body[data-aos-duration="1100"] [data-aos] {
+      transition-duration: 1.1s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1100"],
+    body[data-aos-delay="1100"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1100"].aos-animate,
+    body[data-aos-delay="1100"] [data-aos].aos-animate {
+      transition-delay: 1.1s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1150"],
+    body[data-aos-duration="1150"] [data-aos] {
+      transition-duration: 1.15s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1150"],
+    body[data-aos-delay="1150"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1150"].aos-animate,
+    body[data-aos-delay="1150"] [data-aos].aos-animate {
+      transition-delay: 1.15s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1200"],
+    body[data-aos-duration="1200"] [data-aos] {
+      transition-duration: 1.2s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1200"],
+    body[data-aos-delay="1200"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1200"].aos-animate,
+    body[data-aos-delay="1200"] [data-aos].aos-animate {
+      transition-delay: 1.2s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1250"],
+    body[data-aos-duration="1250"] [data-aos] {
+      transition-duration: 1.25s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1250"],
+    body[data-aos-delay="1250"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1250"].aos-animate,
+    body[data-aos-delay="1250"] [data-aos].aos-animate {
+      transition-delay: 1.25s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1300"],
+    body[data-aos-duration="1300"] [data-aos] {
+      transition-duration: 1.3s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1300"],
+    body[data-aos-delay="1300"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1300"].aos-animate,
+    body[data-aos-delay="1300"] [data-aos].aos-animate {
+      transition-delay: 1.3s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1350"],
+    body[data-aos-duration="1350"] [data-aos] {
+      transition-duration: 1.35s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1350"],
+    body[data-aos-delay="1350"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1350"].aos-animate,
+    body[data-aos-delay="1350"] [data-aos].aos-animate {
+      transition-delay: 1.35s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1400"],
+    body[data-aos-duration="1400"] [data-aos] {
+      transition-duration: 1.4s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1400"],
+    body[data-aos-delay="1400"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1400"].aos-animate,
+    body[data-aos-delay="1400"] [data-aos].aos-animate {
+      transition-delay: 1.4s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1450"],
+    body[data-aos-duration="1450"] [data-aos] {
+      transition-duration: 1.45s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1450"],
+    body[data-aos-delay="1450"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1450"].aos-animate,
+    body[data-aos-delay="1450"] [data-aos].aos-animate {
+      transition-delay: 1.45s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1500"],
+    body[data-aos-duration="1500"] [data-aos] {
+      transition-duration: 1.5s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1500"],
+    body[data-aos-delay="1500"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1500"].aos-animate,
+    body[data-aos-delay="1500"] [data-aos].aos-animate {
+      transition-delay: 1.5s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1550"],
+    body[data-aos-duration="1550"] [data-aos] {
+      transition-duration: 1.55s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1550"],
+    body[data-aos-delay="1550"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1550"].aos-animate,
+    body[data-aos-delay="1550"] [data-aos].aos-animate {
+      transition-delay: 1.55s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1600"],
+    body[data-aos-duration="1600"] [data-aos] {
+      transition-duration: 1.6s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1600"],
+    body[data-aos-delay="1600"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1600"].aos-animate,
+    body[data-aos-delay="1600"] [data-aos].aos-animate {
+      transition-delay: 1.6s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1650"],
+    body[data-aos-duration="1650"] [data-aos] {
+      transition-duration: 1.65s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1650"],
+    body[data-aos-delay="1650"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1650"].aos-animate,
+    body[data-aos-delay="1650"] [data-aos].aos-animate {
+      transition-delay: 1.65s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1700"],
+    body[data-aos-duration="1700"] [data-aos] {
+      transition-duration: 1.7s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1700"],
+    body[data-aos-delay="1700"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1700"].aos-animate,
+    body[data-aos-delay="1700"] [data-aos].aos-animate {
+      transition-delay: 1.7s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1750"],
+    body[data-aos-duration="1750"] [data-aos] {
+      transition-duration: 1.75s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1750"],
+    body[data-aos-delay="1750"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1750"].aos-animate,
+    body[data-aos-delay="1750"] [data-aos].aos-animate {
+      transition-delay: 1.75s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1800"],
+    body[data-aos-duration="1800"] [data-aos] {
+      transition-duration: 1.8s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1800"],
+    body[data-aos-delay="1800"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1800"].aos-animate,
+    body[data-aos-delay="1800"] [data-aos].aos-animate {
+      transition-delay: 1.8s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1850"],
+    body[data-aos-duration="1850"] [data-aos] {
+      transition-duration: 1.85s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1850"],
+    body[data-aos-delay="1850"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1850"].aos-animate,
+    body[data-aos-delay="1850"] [data-aos].aos-animate {
+      transition-delay: 1.85s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1900"],
+    body[data-aos-duration="1900"] [data-aos] {
+      transition-duration: 1.9s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1900"],
+    body[data-aos-delay="1900"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1900"].aos-animate,
+    body[data-aos-delay="1900"] [data-aos].aos-animate {
+      transition-delay: 1.9s
+    }
+
+    [data-aos][data-aos][data-aos-duration="1950"],
+    body[data-aos-duration="1950"] [data-aos] {
+      transition-duration: 1.95s
+    }
+
+    [data-aos][data-aos][data-aos-delay="1950"],
+    body[data-aos-delay="1950"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="1950"].aos-animate,
+    body[data-aos-delay="1950"] [data-aos].aos-animate {
+      transition-delay: 1.95s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2000"],
+    body[data-aos-duration="2000"] [data-aos] {
+      transition-duration: 2s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2000"],
+    body[data-aos-delay="2000"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2000"].aos-animate,
+    body[data-aos-delay="2000"] [data-aos].aos-animate {
+      transition-delay: 2s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2050"],
+    body[data-aos-duration="2050"] [data-aos] {
+      transition-duration: 2.05s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2050"],
+    body[data-aos-delay="2050"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2050"].aos-animate,
+    body[data-aos-delay="2050"] [data-aos].aos-animate {
+      transition-delay: 2.05s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2100"],
+    body[data-aos-duration="2100"] [data-aos] {
+      transition-duration: 2.1s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2100"],
+    body[data-aos-delay="2100"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2100"].aos-animate,
+    body[data-aos-delay="2100"] [data-aos].aos-animate {
+      transition-delay: 2.1s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2150"],
+    body[data-aos-duration="2150"] [data-aos] {
+      transition-duration: 2.15s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2150"],
+    body[data-aos-delay="2150"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2150"].aos-animate,
+    body[data-aos-delay="2150"] [data-aos].aos-animate {
+      transition-delay: 2.15s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2200"],
+    body[data-aos-duration="2200"] [data-aos] {
+      transition-duration: 2.2s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2200"],
+    body[data-aos-delay="2200"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2200"].aos-animate,
+    body[data-aos-delay="2200"] [data-aos].aos-animate {
+      transition-delay: 2.2s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2250"],
+    body[data-aos-duration="2250"] [data-aos] {
+      transition-duration: 2.25s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2250"],
+    body[data-aos-delay="2250"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2250"].aos-animate,
+    body[data-aos-delay="2250"] [data-aos].aos-animate {
+      transition-delay: 2.25s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2300"],
+    body[data-aos-duration="2300"] [data-aos] {
+      transition-duration: 2.3s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2300"],
+    body[data-aos-delay="2300"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2300"].aos-animate,
+    body[data-aos-delay="2300"] [data-aos].aos-animate {
+      transition-delay: 2.3s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2350"],
+    body[data-aos-duration="2350"] [data-aos] {
+      transition-duration: 2.35s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2350"],
+    body[data-aos-delay="2350"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2350"].aos-animate,
+    body[data-aos-delay="2350"] [data-aos].aos-animate {
+      transition-delay: 2.35s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2400"],
+    body[data-aos-duration="2400"] [data-aos] {
+      transition-duration: 2.4s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2400"],
+    body[data-aos-delay="2400"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2400"].aos-animate,
+    body[data-aos-delay="2400"] [data-aos].aos-animate {
+      transition-delay: 2.4s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2450"],
+    body[data-aos-duration="2450"] [data-aos] {
+      transition-duration: 2.45s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2450"],
+    body[data-aos-delay="2450"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2450"].aos-animate,
+    body[data-aos-delay="2450"] [data-aos].aos-animate {
+      transition-delay: 2.45s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2500"],
+    body[data-aos-duration="2500"] [data-aos] {
+      transition-duration: 2.5s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2500"],
+    body[data-aos-delay="2500"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2500"].aos-animate,
+    body[data-aos-delay="2500"] [data-aos].aos-animate {
+      transition-delay: 2.5s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2550"],
+    body[data-aos-duration="2550"] [data-aos] {
+      transition-duration: 2.55s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2550"],
+    body[data-aos-delay="2550"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2550"].aos-animate,
+    body[data-aos-delay="2550"] [data-aos].aos-animate {
+      transition-delay: 2.55s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2600"],
+    body[data-aos-duration="2600"] [data-aos] {
+      transition-duration: 2.6s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2600"],
+    body[data-aos-delay="2600"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2600"].aos-animate,
+    body[data-aos-delay="2600"] [data-aos].aos-animate {
+      transition-delay: 2.6s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2650"],
+    body[data-aos-duration="2650"] [data-aos] {
+      transition-duration: 2.65s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2650"],
+    body[data-aos-delay="2650"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2650"].aos-animate,
+    body[data-aos-delay="2650"] [data-aos].aos-animate {
+      transition-delay: 2.65s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2700"],
+    body[data-aos-duration="2700"] [data-aos] {
+      transition-duration: 2.7s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2700"],
+    body[data-aos-delay="2700"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2700"].aos-animate,
+    body[data-aos-delay="2700"] [data-aos].aos-animate {
+      transition-delay: 2.7s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2750"],
+    body[data-aos-duration="2750"] [data-aos] {
+      transition-duration: 2.75s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2750"],
+    body[data-aos-delay="2750"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2750"].aos-animate,
+    body[data-aos-delay="2750"] [data-aos].aos-animate {
+      transition-delay: 2.75s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2800"],
+    body[data-aos-duration="2800"] [data-aos] {
+      transition-duration: 2.8s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2800"],
+    body[data-aos-delay="2800"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2800"].aos-animate,
+    body[data-aos-delay="2800"] [data-aos].aos-animate {
+      transition-delay: 2.8s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2850"],
+    body[data-aos-duration="2850"] [data-aos] {
+      transition-duration: 2.85s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2850"],
+    body[data-aos-delay="2850"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2850"].aos-animate,
+    body[data-aos-delay="2850"] [data-aos].aos-animate {
+      transition-delay: 2.85s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2900"],
+    body[data-aos-duration="2900"] [data-aos] {
+      transition-duration: 2.9s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2900"],
+    body[data-aos-delay="2900"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2900"].aos-animate,
+    body[data-aos-delay="2900"] [data-aos].aos-animate {
+      transition-delay: 2.9s
+    }
+
+    [data-aos][data-aos][data-aos-duration="2950"],
+    body[data-aos-duration="2950"] [data-aos] {
+      transition-duration: 2.95s
+    }
+
+    [data-aos][data-aos][data-aos-delay="2950"],
+    body[data-aos-delay="2950"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="2950"].aos-animate,
+    body[data-aos-delay="2950"] [data-aos].aos-animate {
+      transition-delay: 2.95s
+    }
+
+    [data-aos][data-aos][data-aos-duration="3000"],
+    body[data-aos-duration="3000"] [data-aos] {
+      transition-duration: 3s
+    }
+
+    [data-aos][data-aos][data-aos-delay="3000"],
+    body[data-aos-delay="3000"] [data-aos] {
+      transition-delay: 0
+    }
+
+    [data-aos][data-aos][data-aos-delay="3000"].aos-animate,
+    body[data-aos-delay="3000"] [data-aos].aos-animate {
+      transition-delay: 3s
+    }
+
+    [data-aos][data-aos][data-aos-easing=linear],
+    body[data-aos-easing=linear] [data-aos] {
+      transition-timing-function: cubic-bezier(.25, .25, .75, .75)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease],
+    body[data-aos-easing=ease] [data-aos] {
+      transition-timing-function: ease
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in],
+    body[data-aos-easing=ease-in] [data-aos] {
+      transition-timing-function: ease-in
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out],
+    body[data-aos-easing=ease-out] [data-aos] {
+      transition-timing-function: ease-out
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out],
+    body[data-aos-easing=ease-in-out] [data-aos] {
+      transition-timing-function: ease-in-out
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-back],
+    body[data-aos-easing=ease-in-back] [data-aos] {
+      transition-timing-function: cubic-bezier(.6, -.28, .735, .045)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out-back],
+    body[data-aos-easing=ease-out-back] [data-aos] {
+      transition-timing-function: cubic-bezier(.175, .885, .32, 1.275)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out-back],
+    body[data-aos-easing=ease-in-out-back] [data-aos] {
+      transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-sine],
+    body[data-aos-easing=ease-in-sine] [data-aos] {
+      transition-timing-function: cubic-bezier(.47, 0, .745, .715)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out-sine],
+    body[data-aos-easing=ease-out-sine] [data-aos] {
+      transition-timing-function: cubic-bezier(.39, .575, .565, 1)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out-sine],
+    body[data-aos-easing=ease-in-out-sine] [data-aos] {
+      transition-timing-function: cubic-bezier(.445, .05, .55, .95)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-quad],
+    body[data-aos-easing=ease-in-quad] [data-aos] {
+      transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out-quad],
+    body[data-aos-easing=ease-out-quad] [data-aos] {
+      transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out-quad],
+    body[data-aos-easing=ease-in-out-quad] [data-aos] {
+      transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-cubic],
+    body[data-aos-easing=ease-in-cubic] [data-aos] {
+      transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out-cubic],
+    body[data-aos-easing=ease-out-cubic] [data-aos] {
+      transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out-cubic],
+    body[data-aos-easing=ease-in-out-cubic] [data-aos] {
+      transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-quart],
+    body[data-aos-easing=ease-in-quart] [data-aos] {
+      transition-timing-function: cubic-bezier(.55, .085, .68, .53)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-out-quart],
+    body[data-aos-easing=ease-out-quart] [data-aos] {
+      transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+    }
+
+    [data-aos][data-aos][data-aos-easing=ease-in-out-quart],
+    body[data-aos-easing=ease-in-out-quart] [data-aos] {
+      transition-timing-function: cubic-bezier(.455, .03, .515, .955)
+    }
+
+    [data-aos^=fade][data-aos^=fade] {
+      opacity: 0;
+      transition-property: opacity, transform
+    }
+
+    [data-aos^=fade][data-aos^=fade].aos-animate {
+      opacity: 1;
+      transform: translateZ(0)
+    }
+
+    [data-aos=fade-up] {
+      transform: translate3d(0, 100px, 0)
+    }
+
+    [data-aos=fade-down] {
+      transform: translate3d(0, -100px, 0)
+    }
+
+    [data-aos=fade-right] {
+      transform: translate3d(-100px, 0, 0)
+    }
+
+    [data-aos=fade-left] {
+      transform: translate3d(100px, 0, 0)
+    }
+
+    [data-aos=fade-up-right] {
+      transform: translate3d(-100px, 100px, 0)
+    }
+
+    [data-aos=fade-up-left] {
+      transform: translate3d(100px, 100px, 0)
+    }
+
+    [data-aos=fade-down-right] {
+      transform: translate3d(-100px, -100px, 0)
+    }
+
+    [data-aos=fade-down-left] {
+      transform: translate3d(100px, -100px, 0)
+    }
+
+    [data-aos^=zoom][data-aos^=zoom] {
+      opacity: 0;
+      transition-property: opacity, transform
+    }
+
+    [data-aos^=zoom][data-aos^=zoom].aos-animate {
+      opacity: 1;
+      transform: translateZ(0) scale(1)
+    }
+
+    [data-aos=zoom-in] {
+      transform: scale(.6)
+    }
+
+    [data-aos=zoom-in-up] {
+      transform: translate3d(0, 100px, 0) scale(.6)
+    }
+
+    [data-aos=zoom-in-down] {
+      transform: translate3d(0, -100px, 0) scale(.6)
+    }
+
+    [data-aos=zoom-in-right] {
+      transform: translate3d(-100px, 0, 0) scale(.6)
+    }
+
+    [data-aos=zoom-in-left] {
+      transform: translate3d(100px, 0, 0) scale(.6)
+    }
+
+    [data-aos=zoom-out] {
+      transform: scale(1.2)
+    }
+
+    [data-aos=zoom-out-up] {
+      transform: translate3d(0, 100px, 0) scale(1.2)
+    }
+
+    [data-aos=zoom-out-down] {
+      transform: translate3d(0, -100px, 0) scale(1.2)
+    }
+
+    [data-aos=zoom-out-right] {
+      transform: translate3d(-100px, 0, 0) scale(1.2)
+    }
+
+    [data-aos=zoom-out-left] {
+      transform: translate3d(100px, 0, 0) scale(1.2)
+    }
+
+    [data-aos^=slide][data-aos^=slide] {
+      transition-property: transform
+    }
+
+    [data-aos^=slide][data-aos^=slide].aos-animate {
+      transform: translateZ(0)
+    }
+
+    [data-aos=slide-up] {
+      transform: translate3d(0, 100%, 0)
+    }
+
+    [data-aos=slide-down] {
+      transform: translate3d(0, -100%, 0)
+    }
+
+    [data-aos=slide-right] {
+      transform: translate3d(-100%, 0, 0)
+    }
+
+    [data-aos=slide-left] {
+      transform: translate3d(100%, 0, 0)
+    }
+
+    [data-aos^=flip][data-aos^=flip] {
+      backface-visibility: hidden;
+      transition-property: transform
+    }
+
+    [data-aos=flip-left] {
+      transform: perspective(2500px) rotateY(-100deg)
+    }
+
+    [data-aos=flip-left].aos-animate {
+      transform: perspective(2500px) rotateY(0)
+    }
+
+    [data-aos=flip-right] {
+      transform: perspective(2500px) rotateY(100deg)
+    }
+
+    [data-aos=flip-right].aos-animate {
+      transform: perspective(2500px) rotateY(0)
+    }
+
+    [data-aos=flip-up] {
+      transform: perspective(2500px) rotateX(-100deg)
+    }
+
+    [data-aos=flip-up].aos-animate {
+      transform: perspective(2500px) rotateX(0)
+    }
+
+    [data-aos=flip-down] {
+      transform: perspective(2500px) rotateX(100deg)
+    }
+
+    [data-aos=flip-down].aos-animate {
+      transform: perspective(2500px) rotateX(0)
+    }
+  </style>
+  <style type="text/css"
+    data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/node_modules/.pnpm/swiper@10.3.1/node_modules/swiper/swiper.css">
+    /**
+ * Swiper 10.3.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2023 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: September 28, 2023
+ */
+
+    /* FONT_START */
+    @font-face {
+      font-family: 'swiper-icons';
+      src: url('data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* FONT_END */
+    :root {
+      --swiper-theme-color: #007aff;
+      /*
+  --swiper-preloader-color: var(--swiper-theme-color);
+  --swiper-wrapper-transition-timing-function: initial;
+  */
+    }
+
+    :host {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 1;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      overflow: clip;
+      list-style: none;
+      padding: 0;
+      /* Fix of Webkit flickering */
+      z-index: 1;
+      display: block;
+    }
+
+    .swiper-vertical>.swiper-wrapper {
+      flex-direction: column;
+    }
+
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+      box-sizing: content-box;
+    }
+
+    .swiper-android .swiper-slide,
+    .swiper-ios .swiper-slide,
+    .swiper-wrapper {
+      transform: translate3d(0px, 0, 0);
+    }
+
+    .swiper-horizontal {
+      touch-action: pan-y;
+    }
+
+    .swiper-vertical {
+      touch-action: pan-x;
+    }
+
+    .swiper-slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+      display: block;
+    }
+
+    .swiper-slide-invisible-blank {
+      visibility: hidden;
+    }
+
+    /* Auto Height */
+    .swiper-autoheight,
+    .swiper-autoheight .swiper-slide {
+      height: auto;
+    }
+
+    .swiper-autoheight .swiper-wrapper {
+      align-items: flex-start;
+      transition-property: transform, height;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    /* 3D Effects */
+    .swiper-3d.swiper-css-mode .swiper-wrapper {
+      perspective: 1200px;
+    }
+
+    .swiper-3d .swiper-wrapper {
+      transform-style: preserve-3d;
+    }
+
+    .swiper-3d {
+      perspective: 1200px;
+    }
+
+    .swiper-3d .swiper-slide,
+    .swiper-3d .swiper-cube-shadow {
+      transform-style: preserve-3d;
+    }
+
+    /* CSS Mode */
+    .swiper-css-mode>.swiper-wrapper {
+      overflow: auto;
+      scrollbar-width: none;
+      /* For Firefox */
+      -ms-overflow-style: none;
+      /* For Internet Explorer and Edge */
+    }
+
+    .swiper-css-mode>.swiper-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .swiper-css-mode>.swiper-wrapper>.swiper-slide {
+      scroll-snap-align: start start;
+    }
+
+    .swiper-css-mode.swiper-horizontal>.swiper-wrapper {
+      scroll-snap-type: x mandatory;
+    }
+
+    .swiper-css-mode.swiper-vertical>.swiper-wrapper {
+      scroll-snap-type: y mandatory;
+    }
+
+    .swiper-css-mode.swiper-free-mode>.swiper-wrapper {
+      scroll-snap-type: none;
+    }
+
+    .swiper-css-mode.swiper-free-mode>.swiper-wrapper>.swiper-slide {
+      scroll-snap-align: none;
+    }
+
+    .swiper-css-mode.swiper-centered>.swiper-wrapper::before {
+      content: '';
+      flex-shrink: 0;
+      order: 9999;
+    }
+
+    .swiper-css-mode.swiper-centered>.swiper-wrapper>.swiper-slide {
+      scroll-snap-align: center center;
+      scroll-snap-stop: always;
+    }
+
+    .swiper-css-mode.swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child {
+      margin-inline-start: var(--swiper-centered-offset-before);
+    }
+
+    .swiper-css-mode.swiper-centered.swiper-horizontal>.swiper-wrapper::before {
+      height: 100%;
+      min-height: 1px;
+      width: var(--swiper-centered-offset-after);
+    }
+
+    .swiper-css-mode.swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child {
+      margin-block-start: var(--swiper-centered-offset-before);
+    }
+
+    .swiper-css-mode.swiper-centered.swiper-vertical>.swiper-wrapper::before {
+      width: 100%;
+      min-width: 1px;
+      height: var(--swiper-centered-offset-after);
+    }
+
+    /* Slide styles start */
+    /* 3D Shadows */
+    .swiper-3d .swiper-slide-shadow,
+    .swiper-3d .swiper-slide-shadow-left,
+    .swiper-3d .swiper-slide-shadow-right,
+    .swiper-3d .swiper-slide-shadow-top,
+    .swiper-3d .swiper-slide-shadow-bottom,
+    .swiper-3d .swiper-slide-shadow,
+    .swiper-3d .swiper-slide-shadow-left,
+    .swiper-3d .swiper-slide-shadow-right,
+    .swiper-3d .swiper-slide-shadow-top,
+    .swiper-3d .swiper-slide-shadow-bottom {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .swiper-3d .swiper-slide-shadow {
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .swiper-3d .swiper-slide-shadow-left {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .swiper-3d .swiper-slide-shadow-right {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .swiper-3d .swiper-slide-shadow-top {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .swiper-3d .swiper-slide-shadow-bottom {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .swiper-lazy-preloader {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -21px;
+      margin-top: -21px;
+      z-index: 10;
+      transform-origin: 50%;
+      box-sizing: border-box;
+      border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+      border-radius: 50%;
+      border-top-color: transparent;
+    }
+
+    .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,
+    .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader {
+      animation: swiper-preloader-spin 1s infinite linear;
+    }
+
+    .swiper-lazy-preloader-white {
+      --swiper-preloader-color: #fff;
+    }
+
+    .swiper-lazy-preloader-black {
+      --swiper-preloader-color: #000;
+    }
+
+    @keyframes swiper-preloader-spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Slide styles end */
+  </style>
+  <style type="text/css"
+    data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/node_modules/.pnpm/swiper@10.3.1/node_modules/swiper/modules/navigation.css">
+    :root {
+      --swiper-navigation-size: 44px;
+      /*
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: var(--swiper-navigation-top-offset, 50%);
+      width: calc(var(--swiper-navigation-size) / 44 * 27);
+      height: var(--swiper-navigation-size);
+      margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+      z-index: 10;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+      opacity: 0.35;
+      cursor: auto;
+      pointer-events: none;
+    }
+
+    .swiper-button-prev.swiper-button-hidden,
+    .swiper-button-next.swiper-button-hidden {
+      opacity: 0;
+      cursor: auto;
+      pointer-events: none;
+    }
+
+    .swiper-navigation-disabled .swiper-button-prev,
+    .swiper-navigation-disabled .swiper-button-next {
+      display: none !important;
+    }
+
+    .swiper-button-prev svg,
+    .swiper-button-next svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform-origin: center;
+    }
+
+    .swiper-rtl .swiper-button-prev svg,
+    .swiper-rtl .swiper-button-next svg {
+      transform: rotate(180deg);
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: var(--swiper-navigation-sides-offset, 10px);
+      right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      right: var(--swiper-navigation-sides-offset, 10px);
+      left: auto;
+    }
+
+    .swiper-button-lock {
+      display: none;
+    }
+
+    /* Navigation font start */
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-family: swiper-icons;
+      font-size: var(--swiper-navigation-size);
+      text-transform: none !important;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+      content: 'prev';
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      right: var(--swiper-navigation-sides-offset, 10px);
+      left: auto;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+      content: 'next';
+    }
+
+    /* Navigation font end */
+  </style>
+  <style type="text/css"
+    data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/node_modules/.pnpm/swiper@10.3.1/node_modules/swiper/modules/pagination.css">
+    :root {
+      /*
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 8px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: rgba(0,0,0,0.25);
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-border-radius: 50%;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+  */
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      text-align: center;
+      transition: 300ms opacity;
+      transform: translate3d(0, 0, 0);
+      z-index: 10;
+    }
+
+    .swiper-pagination.swiper-pagination-hidden {
+      opacity: 0;
+    }
+
+    .swiper-pagination-disabled>.swiper-pagination,
+    .swiper-pagination.swiper-pagination-disabled {
+      display: none !important;
+    }
+
+    /* Common Styles */
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: var(--swiper-pagination-bottom, 8px);
+      top: var(--swiper-pagination-top, auto);
+      left: 0;
+      width: 100%;
+    }
+
+    /* Bullets */
+    .swiper-pagination-bullets-dynamic {
+      overflow: hidden;
+      font-size: 0;
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+      transform: scale(0.33);
+      position: relative;
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+      transform: scale(1);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+      transform: scale(1);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+      transform: scale(0.66);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+      transform: scale(0.33);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+      transform: scale(0.66);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+      transform: scale(0.33);
+    }
+
+    .swiper-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+      height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+      display: inline-block;
+      border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+      background: var(--swiper-pagination-bullet-inactive-color, #000);
+      opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+    }
+
+    button.swiper-pagination-bullet {
+      border: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+      cursor: pointer;
+    }
+
+    .swiper-pagination-bullet:only-child {
+      display: none !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: var(--swiper-pagination-bullet-opacity, 1);
+      background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    }
+
+    .swiper-vertical>.swiper-pagination-bullets,
+    .swiper-pagination-vertical.swiper-pagination-bullets {
+      right: var(--swiper-pagination-right, 8px);
+      left: var(--swiper-pagination-left, auto);
+      top: 50%;
+      transform: translate3d(0px, -50%, 0);
+    }
+
+    .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+      display: block;
+    }
+
+    .swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+    }
+
+    .swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+    .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+      display: inline-block;
+      transition: 200ms transform, 200ms top;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+      transition: 200ms transform, 200ms left;
+    }
+
+    .swiper-horizontal.swiper-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+      transition: 200ms transform, 200ms right;
+    }
+
+    /* Fraction */
+    .swiper-pagination-fraction {
+      color: var(--swiper-pagination-fraction-color, inherit);
+    }
+
+    /* Progress */
+    .swiper-pagination-progressbar {
+      background: var(--swiper-pagination-progressbar-bg-color, rgba(0, 0, 0, 0.25));
+      position: absolute;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background: var(--swiper-pagination-color, var(--swiper-theme-color));
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      transform-origin: left top;
+    }
+
+    .swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      transform-origin: right top;
+    }
+
+    .swiper-horizontal>.swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal,
+    .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+      width: 100%;
+      height: var(--swiper-pagination-progressbar-size, 4px);
+      left: 0;
+      top: 0;
+    }
+
+    .swiper-vertical>.swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-vertical,
+    .swiper-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
+      width: var(--swiper-pagination-progressbar-size, 4px);
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .swiper-pagination-lock {
+      display: none;
+    }
+  </style>
+  <style type="text/css"
+    data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/node_modules/.pnpm/swiper@10.3.1/node_modules/swiper/modules/scrollbar.css">
+    :root {
+      /*
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: 4px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 1%;
+  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
+  --swiper-scrollbar-size: 4px;
+  */
+    }
+
+    .swiper-scrollbar {
+      border-radius: var(--swiper-scrollbar-border-radius, 10px);
+      position: relative;
+      touch-action: none;
+      background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
+    }
+
+    .swiper-scrollbar-disabled>.swiper-scrollbar,
+    .swiper-scrollbar.swiper-scrollbar-disabled {
+      display: none !important;
+    }
+
+    .swiper-horizontal>.swiper-scrollbar,
+    .swiper-scrollbar.swiper-scrollbar-horizontal {
+      position: absolute;
+      left: var(--swiper-scrollbar-sides-offset, 1%);
+      bottom: var(--swiper-scrollbar-bottom, 4px);
+      top: var(--swiper-scrollbar-top, auto);
+      z-index: 50;
+      height: var(--swiper-scrollbar-size, 4px);
+      width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+    }
+
+    .swiper-vertical>.swiper-scrollbar,
+    .swiper-scrollbar.swiper-scrollbar-vertical {
+      position: absolute;
+      left: var(--swiper-scrollbar-left, auto);
+      right: var(--swiper-scrollbar-right, 4px);
+      top: var(--swiper-scrollbar-sides-offset, 1%);
+      z-index: 50;
+      width: var(--swiper-scrollbar-size, 4px);
+      height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+    }
+
+    .swiper-scrollbar-drag {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.5));
+      border-radius: var(--swiper-scrollbar-border-radius, 10px);
+      left: 0;
+      top: 0;
+    }
+
+    .swiper-scrollbar-cursor-drag {
+      cursor: move;
+    }
+
+    .swiper-scrollbar-lock {
+      display: none;
+    }
+  </style>
+  <style type="text/css" data-vite-dev-id="C:/Users/ASUS/Desktop/tixzy-app/src/index.css"></style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div id="root" class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 22px;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"><a class="navbar-brand mt-2 mt-lg-0"
+            href="#"><img src="src/assets/logo.png" height="15" alt="MDB Logo" loading="lazy"></a>
+          <form class="d-flex input-group w-auto"><input type="search" class="form-control rounded" placeholder="Search"
+              aria-label="Search" aria-describedby="search-addon"><span class="input-group-text border-0"
+              id="search-addon"><i class="fas fa-search"></i></span></form>
+        </div>
+        <div class="d-flex align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="https://tixzy.id">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Fastboat</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Event</a></li>
+            <li class="nav-item"><button type="button" class="btn btn-outline-primary">Create Event</button></li>
+            <li class="nav-item"><button type="button" class="btn btn-primary">Login</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mt-5">
+      <div class="swiper-wrapper" id="swiper-wrapper-ce3ed823bbd4dc1e" aria-live="off"
+        style="transform: translate3d(-4664px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 5"
+          style="width: 1116px; margin-right: 50px;">
+          <div class="swiper-slide"><a href="https://google.com"><img class="object-fit-cover"
+                src="https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png" height="350px" width="100%"></a></div>
+        </div>
+        <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+          style="width: 1116px; margin-right: 50px;">
+          <div class="swiper-slide"><a href="https://google.com"><img class="object-fit-cover"
+                src="https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png" height="350px" width="100%"></a></div>
+        </div>
+        <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5"
+          style="width: 1116px; margin-right: 50px;">
+          <div class="swiper-slide"><a href="https://google.com"><img class="object-fit-cover"
+                src="https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png" height="350px" width="100%"></a></div>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="4" role="group" aria-label="5 / 5"
+          style="width: 1116px; margin-right: 50px;">
+          <div class="swiper-slide"><a href="https://google.com"><img class="object-fit-cover"
+                src="https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png" height="350px" width="100%"></a></div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 5"
+          style="width: 1116px; margin-right: 50px;">
+          <div class="swiper-slide"><a href="https://google.com"><img class="object-fit-cover"
+                src="https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png" height="350px" width="100%"></a></div>
+        </div>
+      </div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+        aria-controls="swiper-wrapper-ce3ed823bbd4dc1e"></div>
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+        aria-controls="swiper-wrapper-ce3ed823bbd4dc1e"></div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+          aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0"
+          role="button" aria-label="Go to slide 5"></span>
+      </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+    <div class="row mt-5">
+      <h2><b>Feel The Experience!</b></h2>
+    </div>
+    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper" id="swiper-wrapper-2ee2332959ab8281" aria-live="polite"
+        style="transform: translate3d(-777.333px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+        <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+          style="width: 338.667px; margin-right: 50px;">
+          <div class="col"><a href="https://www.youtube.com">
+              <div class="card h-100"
+                style="border-radius: 16px; background: white; border: 2px solid rgb(195, 198, 206); overflow: visible;">
+                <img src="https://tixzy.id/uploads/0000/1/2023/09/27/ticket-detail-600.jpg" class="card-img-top"
+                  alt="Skyscrapers" style="width: 100%; border-radius: 16px 16px 0px 0px; height: 250px;">
+                <div class="card-body">
+                  <p style="color: rgb(84, 95, 113); font-size: 14px; font-weight: 500; overflow-wrap: break-word;">
+                    FANATIK #XI 2023<br>2023-11-05 - Gianyar</p>
+                  <h5 class="fw-bolder" style="color: rgb(84, 95, 113); overflow-wrap: break-word;">Rp175000</h5>
+                  <hr><img
+                    src="https://tixzy.id/uploads/0000/1/2023/09/27/62258962-2383487805254780-2241931679646089216-n.jpg"
+                    height="30px" width="30px" class="rounded-circle object-fit-cover"><span class="ml-1"><small
+                      class="text-muted"> Fanatik</small></span>
+                </div>
+              </div>
+            </a></div>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 5"
+          style="width: 338.667px; margin-right: 50px;">
+          <div class="col"><a href="https://www.youtube.com">
+              <div class="card h-100"
+                style="border-radius: 16px; background: white; border: 2px solid rgb(195, 198, 206); overflow: visible;">
+                <img src="https://tixzy.id/uploads/0000/1/2023/09/19/kutus-kutus-tixzy-final-760x540px-600.jpg"
+                  class="card-img-top" alt="Skyscrapers"
+                  style="width: 100%; border-radius: 16px 16px 0px 0px; height: 250px;">
+                <div class="card-body">
+                  <p style="color: rgb(84, 95, 113); font-size: 14px; font-weight: 500; overflow-wrap: break-word;">Satu
+                    Dasawarsa Kutus-Kutus<br>2023-11-05 - Gianyar</p>
+                  <h5 class="fw-bolder" style="color: rgb(84, 95, 113); overflow-wrap: break-word;">Rp100000</h5>
+                  <hr><img src="https://tixzy.id/uploads/0000/1/2023/09/15/kutus-kutus-tixzy-250x250-150.jpg"
+                    height="30px" width="30px" class="rounded-circle object-fit-cover"><span class="ml-1"><small
+                      class="text-muted"> Kutus-Kutus Official</small></span>
+                </div>
+              </div>
+            </a></div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" role="group" aria-label="5 / 5"
+          style="width: 338.667px; margin-right: 50px;">
+          <div class="col"><a href="https://www.youtube.com">
+              <div class="card h-100"
+                style="border-radius: 16px; background: white; border: 2px solid rgb(195, 198, 206); overflow: visible;">
+                <img src="https://tixzy.id/uploads/0000/1/2023/08/04/sid-jantan-jahanam28-banner-tixzy02-web-600.jpg"
+                  class="card-img-top" alt="Skyscrapers"
+                  style="width: 100%; border-radius: 16px 16px 0px 0px; height: 250px;">
+                <div class="card-body">
+                  <p style="color: rgb(84, 95, 113); font-size: 14px; font-weight: 500; overflow-wrap: break-word;">SID
+                    28TH Anniversary - Jantan Jahanam<br>2023-11-05 - Bali</p>
+                  <h5 class="fw-bolder" style="color: rgb(84, 95, 113); overflow-wrap: break-word;">Rp280000</h5>
+                  <hr><img src="https://tixzy.id/uploads/0000/1/2023/08/04/kamikaze-logo022023v03color02-150.png"
+                    height="30px" width="30px" class="rounded-circle object-fit-cover"><span class="ml-1"><small
+                      class="text-muted"> Superman is Dead</small></span>
+                </div>
+              </div>
+            </a></div>
+        </div>
+        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 5"
+          style="width: 338.667px; margin-right: 50px;">
+          <div class="col"><a href="https://www.youtube.com">
+              <div class="card h-100"
+                style="border-radius: 16px; background: white; border: 2px solid rgb(195, 198, 206); overflow: visible;">
+                <img src="https://tixzy.id/uploads/0000/1/2023/10/01/banner-detail-600.png" class="card-img-top"
+                  alt="Skyscrapers" style="width: 100%; border-radius: 16px 16px 0px 0px; height: 250px;">
+                <div class="card-body">
+                  <p style="color: rgb(84, 95, 113); font-size: 14px; font-weight: 500; overflow-wrap: break-word;">
+                    D'Youth Festival 3.0<br>2023-10-22 - Denpasar</p>
+                  <h5 class="fw-bolder" style="color: rgb(84, 95, 113); overflow-wrap: break-word;">Rp60000</h5>
+                  <hr><img src="https://tixzy.id/uploads/0000/1/2023/10/01/profile-150.png" height="30px" width="30px"
+                    class="rounded-circle object-fit-cover"><span class="ml-1"><small class="text-muted">
+                      D'YOUTHFEST</small></span>
+                </div>
+              </div>
+            </a></div>
+        </div>
+        <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5"
+          style="width: 338.667px; margin-right: 50px;">
+          <div class="col"><a href="https://www.youtube.com">
+              <div class="card h-100"
+                style="border-radius: 16px; background: white; border: 2px solid rgb(195, 198, 206); overflow: visible;">
+                <img src="https://tixzy.id/uploads/0000/1/2023/09/25/whatsapp-image-2023-09-21-at-45835-pm-600.jpeg"
+                  class="card-img-top" alt="Skyscrapers"
+                  style="width: 100%; border-radius: 16px 16px 0px 0px; height: 250px;">
+                <div class="card-body">
+                  <p style="color: rgb(84, 95, 113); font-size: 14px; font-weight: 500; overflow-wrap: break-word;">
+                    SKEJAB ROAD TO DEWATA PROJECT<br>2023-10-29 - Denpasar</p>
+                  <h5 class="fw-bolder" style="color: rgb(84, 95, 113); overflow-wrap: break-word;">Rp75000</h5>
+                  <hr><img src="https://tixzy.id/uploads/0000/1/2023/09/25/desain-tanpa-judul-36-150.png" height="30px"
+                    width="30px" class="rounded-circle object-fit-cover"><span class="ml-1"><small class="text-muted">
+                      SKEJAB EVENT</small></span>
+                </div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+        aria-controls="swiper-wrapper-2ee2332959ab8281"></div>
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+        aria-controls="swiper-wrapper-2ee2332959ab8281"></div><span class="swiper-notification" aria-live="assertive"
+        aria-atomic="true"></span>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 class="mb-4 aos-init aos-animate" data-aos="fade-up"><b>Upcoming Hot Event</b></h2><a
+          href="https://www.upcoming.com" data-aos="fade-up" class="aos-init aos-animate"><img class="object-fit-cover"
+            src="https://tixzy.id/uploads/0000/1/2023/10/07/20-21-oktober-2023.png" width="100%" height="350px"></a>
+      </div>
+    </div>
+    <div class="mt-5 aos-init" data-aos="fade-up">
+      <div class="row">
+        <div class="col">
+          <h2><b>Explore In Places</b></h2>
+        </div>
+        <div class="col"><button type="button" class="btn btn-outline-primary float-end">More</button></div>
+      </div>
+      <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mt-3 aos-init" data-aos="fade-up">
+        <div class="swiper-wrapper" id="swiper-wrapper-aa95cd195f47df71" aria-live="polite"
+          style="transform: translate3d(0px, 0px, 0px);">
+          <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 5"
+            style="width: 264px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100" style="width: 100%; border-radius: 16px;"><img height="350px"
+                  src="https://tixzy.id/uploads/0000/1/2022/11/04/location-600.png"
+                  class="card-img-top object-fit-cover" style="border-radius: 16px;"></div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 5"
+            style="width: 264px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100" style="width: 100%; border-radius: 16px;"><img height="350px"
+                  src="https://tixzy.id/uploads/0000/1/2022/11/04/location3-600.png"
+                  class="card-img-top object-fit-cover" style="border-radius: 16px;"></div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+            style="width: 264px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100" style="width: 100%; border-radius: 16px;"><img height="350px"
+                  src="https://tixzy.id/uploads/0000/1/2022/10/10/gianyar.jpg" class="card-img-top object-fit-cover"
+                  style="border-radius: 16px;"></div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5"
+            style="width: 264px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100" style="width: 100%; border-radius: 16px;"><img height="350px"
+                  src="https://tixzy.id/uploads/0000/1/2022/11/08/ubud-600.png" class="card-img-top object-fit-cover"
+                  style="border-radius: 16px;"></div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5"
+            style="width: 264px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100" style="width: 100%; border-radius: 16px;"><img height="350px"
+                  src="https://tixzy.id/uploads/0000/1/2022/11/04/location2-600.png"
+                  class="card-img-top object-fit-cover" style="border-radius: 16px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-aa95cd195f47df71"></div>
+        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-aa95cd195f47df71"></div><span class="swiper-notification" aria-live="assertive"
+          aria-atomic="true"></span>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h2 data-aos="fade-up" class="aos-init"><b>Our Past Event</b></h2>
+      <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-wrapper" id="swiper-wrapper-61e6ebad17c6a10ce" aria-live="polite"
+          style="transform: translate3d(0px, 0px, 0px);">
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4"
+            style="width: 1116px; margin-right: 50px;">
+            <div class="col aos-init" data-aos="fade-up"><a href="https://pastevent.com"><img
+                  src="https://tixzy.id/uploads/0000/1/2023/08/04/sid-jantan-jahanam28-banner-tixzy.jpg" width="100%"
+                  height="360px"></a></div>
+          </div>
+          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4"
+            style="width: 1116px; margin-right: 50px;">
+            <div class="col aos-init" data-aos="fade-up"><a href="https://pastevent.com"><img
+                  src="https://tixzy.id/uploads/0000/1/2023/07/18/banner.jpg" width="100%" height="360px"></a></div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 1116px; margin-right: 50px;">
+            <div class="col aos-init" data-aos="fade-up"><a href="https://pastevent.com"><img
+                  src="https://tixzy.id/uploads/0000/1/2023/06/06/banner-ticket.jpg" width="100%" height="360px"></a>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 1116px; margin-right: 50px;">
+            <div class="col aos-init" data-aos="fade-up"><a href="https://pastevent.com"><img
+                  src="https://tixzy.id/uploads/0000/1/2023/04/20/kasangafest-banner.jpeg" width="100%"
+                  height="360px"></a></div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-61e6ebad17c6a10ce" aria-disabled="true"></div>
+        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-61e6ebad17c6a10ce" aria-disabled="false"></div>
+        <div
+          class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+            aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+            role="button" aria-label="Go to slide 4"></span>
+        </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    <div class="mt-5 mb-5">
+      <div class="row aos-init" data-aos="fade-up">
+        <h2><b>See Our Latest Information</b></h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col"><a href="https://tixzy.id/news/dyouthfest-20-21-oktober-2023">
+            <div class="card h-100 aos-init" data-aos="fade-up" style="width: 100%;"><img
+                src="https://tixzy.id/uploads/0000/1/2023/10/01/banner-detail.png" class="card-img-top"
+                alt="Skyscrapers" height="250px">
+              <div class="card-body">
+                <h4 class="card-text"><b>D'Youthfest - 20 &amp; 21 Oktober 2023</b></h4>
+                <p class="card-text">DYOUTHFEST adalah perayaan pemuda Kota Denpasar yang didedikasikan untuk merayakan
+                  kreativitas, inspirasi, dan potensi tak terbatas pemuda Kota Denpasar. Dyouthfest adalah momen di mana
+                  kita mengukuhkan pemuda sebagai kekuatan yang tak terhentikan dalam menciptakan masa depan yang lebih
+                  cerah.</p>
+              </div>
+            </div>
+          </a></div>
+        <div class="col"><a href="https://tixzy.id/news/road-to-dewata-project-event-skejab">
+            <div class="card h-100 aos-init" data-aos="fade-up" style="width: 100%;"><img
+                src="https://tixzy.id/uploads/0000/1/2023/09/25/whatsapp-image-2023-09-21-at-45835-pm.jpeg"
+                class="card-img-top" alt="Skyscrapers" height="250px">
+              <div class="card-body">
+                <h4 class="card-text"><b>ROAD TO DEWATA PROJECT - EVENT SKEJAB</b></h4>
+                <p class="card-text">EVENT YANG TERDAHSYAT DIBULAN OKTOBER 2023 DENGAN BRANDIG ROAD TO DEWATA PROJECT
+                  DENGAN EVENT YANG BERNAMA SKEJAB – SAT SET SAT SET. MENGHADIRKAN ARTIS ARTIS PAPAN ATAS DAN DJ
+                  PROFESIONAL, DAN DIADAKAN DI GET UP DENPASAR BALI.</p>
+              </div>
+            </div>
+          </a></div>
+        <div class="col"><a
+            href="https://tixzy.id/news/10-tahun-anniversary-satu-dasawarsa-kutus-kutus-akan-menampilkan-dj-dashberlin">
+            <div class="card h-100 aos-init" data-aos="fade-up" style="width: 100%;"><img
+                src="https://tixzy.id/uploads/0000/1/2023/09/19/kutus-kutus-tixzy-final-760x540px.jpg"
+                class="card-img-top" alt="Skyscrapers" height="250px">
+              <div class="card-body">
+                <h4 class="card-text"><b>10 Tahun Anniversary 'Satu Dasawarsa Kutus - Kutus' Akan Menampilkan DJ
+                    Dashberlin</b></h4>
+                <p class="card-text">KONSER 10 TAHUN KUTUS-KUTUS YANG BERNAMA 'SATU DASAWARSA KUTUS-KUTUS' DENGAN BANGGA
+                  MENAMPILKAN DJ INTERNASIONAL DASHBERLIN DAN ARTIS PAPAN ATAS LAINNYA.</p>
+              </div>
+            </div>
+          </a></div>
+        <div class="col"><a href="https://tixzy.id/news/event-fanatik-11-27-oktober-2023">
+            <div class="card h-100 aos-init" data-aos="fade-up" style="width: 100%;"><img
+                src="https://tixzy.id/uploads/0000/1/2023/09/27/ticket-detail.jpg" class="card-img-top"
+                alt="Skyscrapers" height="250px">
+              <div class="card-body">
+                <h4 class="card-text"><b>Event Fanatik #11 - 27 OKTOBER 2023</b></h4>
+                <p class="card-text">FANATIK MERUPAKAN SINGKATAN DARI FESTIVAL SENI DAN KREASI TEKNIK. FANATIK SENDIRI
+                  MERUPAKAN SUATU AJANG KREATIVITAS PESTA SENI DAN KREASI ANAK MUDA TEKNIK UNTUK MENYELESARAKAN KEGIATAN
+                  AKADEMIK DAN NON AKADEMIK. FANATIK #11 MENGANGKAT TEMA 'RUMAKSANING ABHINAYA URIP' YANG BERMAKNA DAPAT
+                  MENJAGA DAN MENINGKATKAN SEMANGAT DI KALANGAN MAHASISWA ATAUPUN MASYARAKAT UNTUK MENJALANKAN SEMUA
+                  KEWAJIBAN DALAM KEHIDUPAN. TIDAK HANYA KONSER MUSIK, DALAM FESTIVAL INI JUGA ADA TENANT UMKM.</p>
+              </div>
+            </div>
+          </a></div>
+        <div class="col"><a href="https://tixzy.id/news/lsd-anniversary-mazu-beach-club-9-08-2023">
+            <div class="card h-100 aos-init" data-aos="fade-up" style="width: 100%;"><img
+                src="https://tixzy.id/uploads/0000/1/2023/07/18/ticket-detail.jpg" class="card-img-top"
+                alt="Skyscrapers" height="250px">
+              <div class="card-body">
+                <h4 class="card-text"><b>LSD Anniversary Mazu Beach Club 9 08 2023</b></h4>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a></div>
+      </div>
+      <div class="row aos-init" data-aos="fade-up">
+        <div class="col"><button type="button" class="btn btn-outline-primary">More</button></div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col" style="width: 50%; text-align: center;"><img src="src/assets/logo.png" height="50px">
+        <p
+          style="text-align: center; color: rgb(128, 128, 128); font-size: 12px; font-weight: 400; overflow-wrap: break-word;">
+          tixzy.id focuses on connecting people with experinces by providing technology solutions for experience
+          creators &amp; event organizers and tourism destination as well as activity options for experience seekers.
+          Book your experiences online with tixzy.id</p>
+      </div>
+      <div class="col" style="width: 50%; text-align: center;"></div>
+    </div>
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block"></div>
+        <div><a href="" class="me-4 link-secondary"><i class="fab fa-facebook-f"></i></a><a href=""
+            class="me-4 link-secondary"><i class="fab fa-twitter"></i></a><a href="" class="me-4 link-secondary"><i
+              class="fab fa-google"></i></a><a href="" class="me-4 link-secondary"><i
+              class="fab fa-instagram"></i></a><a href="" class="me-4 link-secondary"><i
+              class="fab fa-linkedin"></i></a><a href="" class="me-4 link-secondary"><i class="fab fa-github"></i></a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Tixzy.id</h6>
+              <p><a href="#!" class="text-reset">About Us</a></p>
+              <p><a href="#!" class="text-reset">Blog</a></p>
+              <p><a href="#!" class="text-reset">Services</a></p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Our Services</h6>
+              <p><a href="#!" class="text-reset">Event Management</a></p>
+              <p><a href="#!" class="text-reset">Online Management</a></p>
+              <p><a href="#!" class="text-reset">Point of Sales</a></p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Partner With Us</h6>
+              <p><a href="#!" class="text-reset">Submit Event</a></p>
+              <p><a href="#!" class="text-reset">Official Partner</a></p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Support</h6>
+              <p>Contact Us</p>
+              <p>Terms &amp; Condition</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.024);">Copyright © 2022 by <span><a
+            class="text-reset fw-bold" href="https://tixzy.id">Tixzy.id</a></span></div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+
+
+</body>
+
+</html>
