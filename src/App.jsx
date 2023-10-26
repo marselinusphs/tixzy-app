@@ -42,7 +42,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <a className="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="assets/logo.png"
+                src="src/assets/logo.png"
                 height="32px"
                 alt="MDB Logo"
                 loading="lazy"
@@ -122,7 +122,7 @@ function Banner() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("assets/dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("../dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setBanners(data);
       } catch (error) {
@@ -246,7 +246,7 @@ function Experience() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("assets/dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("../dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setEvents(data);
 
@@ -360,7 +360,7 @@ function UpcomingEvent2() {
   );
 }
 
-function UpcomingEventCard2({ image = "assets/wisata.png" }) {
+function UpcomingEventCard2({ image = "src/assets/wisata.png" }) {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -433,7 +433,7 @@ function UpcomingEvent() {
   );
 }
 
-function PlaceCard({ image = "assets/wisata.png" }) {
+function PlaceCard({ image = "src/assets/wisata.png" }) {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -510,7 +510,7 @@ function Place() {
 }
 
 function PastEventCard({
-  image = "assets/banner.jpg",
+  image = "src/assets/banner.jpg",
   href = "https://pastevent.com",
 }) {
   useEffect(() => {
@@ -577,9 +577,9 @@ function PastEvent() {
 }
 
 function InformationCard({
-  authorPhoto = "assets/author.jpg",
+  authorPhoto = "src/assets/author.jpg",
   author = "{Author}",
-  image = "assets/information.jpg",
+  image = "src/assets/information.jpg",
   date = "{Information Date}",
   link = "{Information Date}",
   title = "{Information Title}",
@@ -688,7 +688,7 @@ function About() {
       <div className="pt-5 pb-5 container">
         <div className="row">
           <div style={tdStyle} className="col">
-            <img src="assets/logo.png" height="50px" />
+            <img src="src/assets/logo.png" height="50px" />
             <p style={aboutText}>
               tixzy.id focuses on connecting people with experinces by providing
               technology solutions for experience creators & event organizers
