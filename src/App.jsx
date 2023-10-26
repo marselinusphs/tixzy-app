@@ -122,7 +122,7 @@ function Banner() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("assets/dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setBanners(data);
       } catch (error) {
@@ -246,7 +246,7 @@ function Experience() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("assets/dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setEvents(data);
 
