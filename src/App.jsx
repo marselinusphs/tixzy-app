@@ -44,11 +44,9 @@ function Header() {
               <img
                 src="src/assets/logo.png"
                 height="32px"
-                alt="MDB Logo"
                 loading="lazy"
               />
             </a>
-
             <form className="d-flex input-group w-auto">
               <input
                 type="search"
@@ -89,7 +87,7 @@ function Header() {
                   Create Event
                 </button>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ml-3">
                 <button
                   type="button"
                   className="btn btn-primary"
