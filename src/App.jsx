@@ -65,7 +65,7 @@ function Header() {
           <div className="d-flex align-items-center">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="https://tixzy.id">
+                <a className="nav-link" href="https://google.com">
                   Home
                 </a>
               </li>
