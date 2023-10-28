@@ -32,6 +32,11 @@ function Header() {
     borderRadius: 5,
   };
 
+  const createEventButton = {
+    border: 0,
+    borderRadius: 5,
+  };
+
   return (
     <header className="mb-10">
       <nav
@@ -82,12 +87,16 @@ function Header() {
                   Event
                 </a>
               </li>
+              <br />
               <li className="nav-item">
-                <button type="button" className="btn btn-outline-primary">
+                <button type="button" className="btn btn-outline-primary" style={createEventButton}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+<path d="M11.375 6.22909V4.76659C11.375 3.8565 11.375 3.40146 11.1979 3.05385C11.0421 2.74809 10.7935 2.49949 10.4877 2.3437C10.1401 2.16659 9.68509 2.16659 8.775 2.16659H4.225C3.31491 2.16659 2.85987 2.16659 2.51227 2.3437C2.2065 2.49949 1.95791 2.74809 1.80211 3.05385C1.625 3.40146 1.625 3.8565 1.625 4.76659V9.31659C1.625 10.2267 1.625 10.6817 1.80211 11.0293C1.95791 11.3351 2.2065 11.5837 2.51227 11.7395C2.85987 11.9166 3.31491 11.9166 4.225 11.9166H6.77083M11.375 5.41659H1.625M8.66667 1.08325V3.24992M4.33333 1.08325V3.24992M9.75 11.3749V8.12492M8.125 9.74992H11.375" stroke="#1993B8" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
                   Create Event
                 </button>
               </li>
-              <li className="nav-item ml-3">
+              <li className="nav-item">
                 <button
                   type="button"
                   className="btn btn-primary"
@@ -120,7 +129,7 @@ function Banner() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("src/assets/dummy-data/Banner.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setBanners(data);
       } catch (error) {
@@ -244,11 +253,11 @@ function Experience() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("src/assets/dummy-data/ExperienceEvent.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setEvents(data);
 
-        const response2 = await fetch("../dummy-data/ExperiencePlace.json"); // Sesuaikan dengan path file JSON Anda
+        const response2 = await fetch("src/assets/dummy-data/ExperiencePlace.json"); // Sesuaikan dengan path file JSON Anda
         const data2 = await response2.json();
         setPlaces(data2);
       } catch (error) {
@@ -264,6 +273,7 @@ function Experience() {
       <div className="row mt-5 mb-3">
         <h2>
           <b>Feel The Experience!</b>
+          <i className="bi bi-0-circle-fill"></i>
         </h2>
       </div>
 
@@ -389,7 +399,7 @@ function UpcomingEvent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/UpcomingEvent.json");
+        const response = await fetch("src/assets/dummy-data/UpcomingEvent.json");
         const data = await response.json();
         setEvents(data);
       } catch (error) {
@@ -454,6 +464,10 @@ function PlaceCard({ image = "src/assets/wisata.png" }) {
 }
 
 function Place() {
+  const moreButton = {
+    width: 129, height: 42, padding: 12, boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 8, border: '1px #1993B8 solid', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'
+  };
+  
   useEffect(() => {
     AOS.init();
   }, []);
@@ -463,7 +477,7 @@ function Place() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/Places.json"); // Sesuaikan dengan path file JSON Anda
+        const response = await fetch("src/assets/dummy-data/Places.json"); // Sesuaikan dengan path file JSON Anda
         const data = await response.json();
         setPlaces(data);
       } catch (error) {
@@ -483,7 +497,7 @@ function Place() {
           </h2>
         </div>
         <div className="col">
-          <button type="button" className="btn btn-outline-primary float-end">
+          <button type="button" className="btn btn-outline-primary float-end" style={moreButton}>
             More
           </button>
         </div>
@@ -532,7 +546,7 @@ function PastEvent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/PastEvent.json");
+        const response = await fetch("src/assets/dummy-data/PastEvent.json");
         const data = await response.json();
         setEvents(data);
       } catch (error) {
@@ -586,7 +600,8 @@ function InformationCard({
   useEffect(() => {
     AOS.init();
   }, []);
-
+  
+  
   return (
     <div className="col">
       <a href={link}>
@@ -605,8 +620,7 @@ function InformationCard({
             <h4 className="card-text">
               <b>{title}</b>
             </h4>
-            <p className="text-truncate">{description}
-</p>
+            <p className="text-truncate">{description}</p>
           </div>
         </div>
       </a>
@@ -615,12 +629,15 @@ function InformationCard({
 }
 
 function Information() {
+  const seeAllButton = {
+    width: 129, height: 42, padding: 12, boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 8, border: '1px #1993B8 solid', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'
+  };
   const [informations, setInformations] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../dummy-data/Information.json");
+        const response = await fetch("src/assets/dummy-data/Information.json");
         const data = await response.json();
         setInformations(data);
       } catch (error) {
@@ -649,10 +666,10 @@ function Information() {
           />
         ))}
       </div>
-      <div className="row" data-aos="fade-up">
-        <div className="col">
-          <button type="button" className="btn btn-outline-primary">
-            More
+      <div className="row mt-3" data-aos="fade-up">
+        <div className="col text-center">
+          <button type="button" className="btn btn-outline-primary" style={seeAllButton}>
+            See All
           </button>
         </div>
       </div>
@@ -674,6 +691,10 @@ function About() {
     wordWrap: "break-word",
   };
 
+  const paymentOptionStyle = {
+    width: '100%', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: 30
+  };
+
   return (
     <div
       className="pt-5 pb-5"
@@ -687,14 +708,16 @@ function About() {
         <div className="row">
           <div style={tdStyle} className="col">
             <img src="src/assets/logo.png" height="50px" />
-            <p style={aboutText}>
+            <p style={aboutText} className="mt-4">
               tixzy.id focuses on connecting people with experinces by providing
               technology solutions for experience creators & event organizers
               and tourism destination as well as activity options for experience
               seekers. Book your experiences online with tixzy.id
             </p>
           </div>
-          <div style={tdStyle} className="col"></div>
+          <div style={tdStyle} className="col">
+            <img src="src/assets/08d7627667c47f0acb5bebc0b59eed55.png" style={paymentOptionStyle} />
+          </div>
         </div>
       </div>
     </div>
