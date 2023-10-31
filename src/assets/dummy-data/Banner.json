@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "link": "https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png",
+      "link": "src/assets/Image.png",
       "alt": "Konser Musik"
     },
     {
@@ -11,7 +11,7 @@
     },
     {
       "id": "3",
-      "link": "https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png",
+      "link": "src/assets/Image.png",
       "alt": "Pameran Seni"
     },
     {
@@ -21,7 +21,12 @@
     },
     {
       "id": "5",
-      "link": "https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png",
+      "link": "src/assets/Image.png",
       "alt": "Pertunjukan"
+    },
+    {
+      "id": "6",
+      "link": "https://tixzy.id/uploads/0000/1/2023/09/29/banneerrr.png",
+      "alt": "Olahraga"
     }
   ]

@@ -1,0 +1,133 @@
+@media screen and (max-width:768px){
+  .swiper-button-next::after,
+  .swiper-button-next::before,
+  .swiper-button-prev::after,
+  .swiper-button-prev::before {
+    font-size: 14px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    height: 24px !important;
+    width: 24px !important;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    color: #1993b8;
+    
+    transition: 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 24px !important;
+    border-radius: 25px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #1993b8;
+  }
+}
+
+@media screen and (max-width:576px){
+  
+}
+
+.entrance-animation {
+  animation-name: entrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  opacity: 0; /* Mulai dengan elemen tersembunyi */
+}
+
+@keyframes entrance {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Navigation Bar */
+.subtitle{
+  font-size: 35px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  
+}
+
+#upcoming .swiper-pagination-bullet{
+  background-color: white;
+
+}
+
+#navbarNavAltMarkup a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-link {
+  font-size: 14px !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.truncatebro{
+  font-size: 14px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.buttonbiruputih{
+  background-color: #1993b8;
+  color: white;
+}
+
+.buttonbiruputih:hover{
+  background-color: white;
+  color: #1993b8;
+}
+
+.buttonputihbiru{
+  background-color: white;
+  color: #1993b8;
+}
+
+.buttonputihbiru:hover{
+  background-color: #1993b8;
+  color: white;
+}
+
+nav form {
+  /* width: 100%; */
+  /* border: 10px solid red; */
+}
+
+#searchbox {
+  /* width: 100%; */
+}
+
+#navbarNavAltMarkup a {
+}
+
+/* Banner */
+#banner img{
+  border-radius: 16px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+}
+
+#IconSearch {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  font-size: 20px;
+}
