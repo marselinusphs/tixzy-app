@@ -4,6 +4,19 @@ import * as Icon from 'react-bootstrap-icons';
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  MDBContainer,
+  MDBTabs,
+  MDBTabsItem,
+  MDBTabsLink,
+  MDBTabsContent,
+  MDBTabsPane,
+  MDBBtn,
+  MDBIcon,
+  MDBInput,
+  MDBCheckbox
+}
+from 'mdb-react-ui-kit';
 
 // Import Swiper React components
 import {
@@ -22,13 +35,26 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function Header() {
-  const [placeholder, setPlaceholder] = useState("Cari Event");
+  const [justifyActive, setJustifyActive] = useState('tab1');
 
+  const handleJustifyClick = (value) => {
+    if (value === justifyActive) {
+      return;
+    }
+
+    setJustifyActive(value);
+  };
+
+  const [placeholder, setPlaceholder] = useState("Cari Event");
   useEffect(() => {
     const interval = setInterval(() => {
-      setPlaceholder(
-        placeholder == "Cari Event" ? "Cari Experience" : "Cari Event"
-      );
+      if(placeholder == "Cari Event"){
+        setPlaceholder("Cari Experience");
+      } else if(placeholder == "Cari Experience") {
+        setPlaceholder("Cari Fastboat");
+      } else if(placeholder == "Cari Fastboat") {
+        setPlaceholder("Cari Event");
+      }
     }, 3000);
     return () => clearInterval(interval);
   }, [placeholder]);
@@ -38,28 +64,7 @@ function Header() {
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
-            <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Login</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-            <form>
-              <div className="form-outline mb-4">
-                <input type="email" id="form2Example1" className="form-control" placeholder="Email Address"/>
-              </div>
-
-              <div className="form-outline mb-4">
-                <input type="password" id="form2Example2" className="form-control" placeholder="Password"/>
-              </div>
-
-
-              <button type="button" className="btn btn-primary btn-block mb-4">Sign in</button>
-
-              <div className="text-center">
-                <p>Not a member? <a href="#!">Register</a></p>
-              </div>
-            </form>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -80,10 +85,11 @@ function Header() {
             <form className="d-flex" role="search" style={{position: 'relative'}}>
               <Icon.Search id="IconSearch" />
               <input
-                className="form-control px-5 input-field my-auto me-2" 
+                className="form-control ps-5 input-field my-auto me-2" 
+                id="placeholder"
                 type="search"
                 placeholder={placeholder}
-                style={{width: "400px"}}
+                style={{width: "100%"}}
               />
             </form>
           </div>
@@ -139,6 +145,7 @@ function Banner() {
 
   return (
     <div  style={{backgroundColor: '#f4f4f4'}}>
+      
     <div className="container py-5">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -161,6 +168,7 @@ function Banner() {
         ))}
       </Swiper>
     </div>
+    
     </div>
   );
 }
@@ -208,18 +216,19 @@ function ExperienceCard({
   return (
     <div className="col">
       <a href={href}>
-        <div className="card h-100" style={card}>
+        <div className="card h-100" style={card} >
           <img
             src={image}
             className="card-img-top"
             style={imageStyle}
             alt="Skyscrapers"
           />
-          <div className="card-body">
+          <div className="card-body" style={{height: '210px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <span style={experienceTitleStyle}>
               {title}
-              <p style={{color: "#222222", fontSize: "16px", fontWeight: "300"}}>{date} | {location}</p>
+              <p style={{color: "#222222", fontSize: "14px", fontWeight: "300"}}>{date} | {location}</p>
             </span>
+            <div>
             <span className="fw-semibold h5" style={experiencePriceStyle}>
               IDR {price}
             </span>
@@ -233,6 +242,7 @@ function ExperienceCard({
             <span className="px-1">
               <small className="text-muted fw-semibold"> {organizer}</small>
             </span>
+            </div>
           </div>
         </div>
       </a>
@@ -270,7 +280,7 @@ function Experience() {
     <div style={{backgroundColor: '#f4f4f4'}}>
     <div className="container pb-5 pt-2">
       <div className="row">
-        <h1 className="fw-bold subtitle h1">Feel The Experience!</h1>
+        <h1 className="fw-bold subtitle">Our Event!</h1>
       </div>
       <div className="row">
       <Swiper
@@ -292,7 +302,7 @@ function Experience() {
         grabCursor={true}
         navigation
         loop={true}
-        className="pb-5 px-5"
+        className="pb-5 px-5 pt-3"
       >
         {events.map((event) => (
           <SwiperSlide key={event.id}>
@@ -308,6 +318,9 @@ function Experience() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
+      <div className="row">
+        <h1 className="fw-bold subtitle mt-5">Feel The Experience!</h1>
       </div>
       <div className="row">
       <Swiper
@@ -337,7 +350,7 @@ function Experience() {
         grabCursor={true}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
-        className="px-5 py-5"
+        className="px-5 pb-5 pt-2"
       >
         {places.map((place) => (
           <SwiperSlide key={place.id}>
@@ -407,9 +420,9 @@ function UpcomingEvent() {
   }, []);
 
   const divStyle = {
-    backgroundImage: `url('src/assets/EC59276C-41DD-46FE-AE74-884233F97F88.png')`,
-    // backgroundImage: `url('https://tixzy.id/uploads/0000/1/2023/09/29/r-9.png')`,
-    // backgroundColor: '#000000',
+    backgroundImage: `
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url('src/assets/EC59276C-41DD-46FE-AE74-884233F97F88.png')`,
     backgroundSize: 'cover',
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -419,8 +432,8 @@ function UpcomingEvent() {
     <div id="upcoming" style={divStyle} className="pt-5">
     <div className="container">
       <div className="row">
-      <p className="subtitle h1 fw-bold fs-1" data-aos="fade-up">Upcoming Hot Event
-      </p></div>
+      <span id='bestoffering' className="subtitle" data-aos="fade-up">Best Offering
+      </span></div>
       <div>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -453,15 +466,19 @@ function PlaceCard({ image = "src/assets/wisata.png" }) {
     <div className="col py-4">
       <a href="https://youtube.com">
         <div
-          className="card h-100"
-          style={{ width: "100%", borderRadius: "16px", boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1)', }}
+          className="card" data-mdb-ripple-color="light"
+
+          style={{ width: "100%", borderRadius: "16px", boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1)', position: "relative"}}
         >
           <img
             height="350px"
             src={image}
             className="card-img-top object-fit-cover"
-            style={{ borderRadius: "16px" }}
+            style={{ borderRadius: "12px" }}
           />
+          <div className="overlay-text">
+            Jakarta
+          </div>
         </div>
       </a>
     </div>
@@ -515,7 +532,7 @@ function Place() {
         breakpoints={{
           0: {
             slidesPerView: 2,
-            // spaceBetween: 36,
+            spaceBetween: 16,
           },
           640: {
             slidesPerView: 3,
@@ -532,6 +549,7 @@ function Place() {
         loop={true}
         grabCursor={true}
         data-aos="fade-up"
+        className="px-1"
       >
         {places.map((place) => (
           <SwiperSlide key={place.id}>
@@ -554,9 +572,10 @@ function PastEventCard({
 
   return (
     <div className="col">
-      <SwiperSlide id="banner" >
+      <SwiperSlide id="banner">
         <a href={href}>
-          <img className="object-fit-cover" src={image} width="100%" height='100%'/>
+          <img className="w-100" src={image} height='360px' style={{objectFit: 'contain', backgroundRepeat: 'no-repeat'
+}}/>
         </a>
       </SwiperSlide>
     </div>
@@ -586,23 +605,22 @@ function PastEvent() {
 
   return (
     <div style={{backgroundColor: '#f4f4f4'}}>
-    <div className="container py-5">
-      <h2 className="subtitle" data-aos="fade-up">Our Past Event</h2>
+    <div className="container pt-3 pb-5">
+      <h2 className="subtitle" data-aos="fade-up">Our Passed Event</h2>
       <div className="row">
       <Swiper
         id="pastevent"
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
-        autoHeight={true}
         slidesPerView={1}
         navigation
+        pagination={{ clickable: true }}
         grabCursor={true}
         loop={true}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
         }}
-        pagination={{ clickable: true }}
         className="custom-nav-button"
         data-aos="fade-up"
       >
@@ -656,7 +674,7 @@ function InformationCard({
   return (
     <div className="col">
       <a href={link}>
-        <div
+        <div id='infocard'
           className="card h-100"
           style={card}
           data-aos="fade-up"
@@ -667,12 +685,12 @@ function InformationCard({
             alt="Skyscrapers"
             style={imageStyle}
           />
-          <div className="card-body row">
+          <div className="card-body row" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
             <span style={experienceTitleStyle}>
               {title}
               <p style={{color: "#222222", fontSize: "14px", fontWeight: "400"}}>31 Desember 2023</p>
             </span>
-            <p className="truncatebro">{description}</p>
+            <p className="fw-normal truncatebro">{description}</p>
           </div>
           </div>
       </a>
@@ -732,15 +750,7 @@ function Information() {
 function Partner() {
   return (
     <div className="py-5">
-      <div style={{
-        backgroundImage: `url('src/assets/partner-us1.png')`,
-        backgroundSize: 'cover',
-        width: '100%',
-        height: '400px',
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}>
-      </div>
+        <img src="src/assets/partner-us1.png" className='w-100' alt="" />
     </div>
   );
 }

@@ -131,3 +131,76 @@ nav form {
   top: 8px;
   font-size: 20px;
 }
+
+.realistic-marker-highlight{
+  position:relative;
+  color: #ffffff;
+}
+.realistic-marker-highlight:before{
+  content:"";
+  background-color:#ef8c22;
+  width:40%;
+  height:1.3em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:-0.05em;
+  padding:0 0.30em;
+}
+
+#banner:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  filter: brightness(0.8); /* Mengurangi kecerahan gambar saat dihover */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff; /* Warna teks */
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5); /* Efek bayangan teks */
+}
+
+.subtitle {
+  font-weight: 900 !important;
+}
+
+#bestoffering {
+  color: white;
+  font: 700 normal 3em 'tahoma' !important;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+
+}
+
+#infocard {
+  transition: transform 0.2s;
+}
+
+#infocard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  transition: transform 0.2s;
+}
+.nav-link:hover {
+  color: #1993b8; /* Ganti warna menjadi biru saat dihover */
+  text-decoration: underline; /* Tambahkan garis bawah saat dihover */
+}
